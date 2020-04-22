@@ -14,9 +14,10 @@ Commit
 Merging
 PR
 
-References
+**References**
 1. https://www.atlassian.com/git/tutorials/what-is-version-control
-2. 
+2. https://www.perforce.com/blog/vcs/what-source-control
+3. https://lonewolfonline.net/source-control/
 
 # Q2	
 What are the most important aspects of quality software?
