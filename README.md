@@ -10,18 +10,25 @@ To manage all of the above challanges a souce control or version control mechani
 
 There two main approaches for source control **Centralized** and **Distributed**. As the name suggests in the Centralized approach there is only one working copy of the source code and the version control is performed on that copy, whenever changes are required to be made on files, developers need to aquire exclusive rights to update the code in a file by checking out and then commit the changes using check-in. However this approach leads to inefficiencies and many other issues, since only one developer can make changes to a file at a time.
 
-Branching
+In a Distributed source control system such as Git developers aquire copy of the codebase (source of truth) locally and then make and commit changes to the local copy. When the developer is satisfied with the newly created or updated functionality the changes are synced back to the main shared codebase (new source of truth).
 
-Commit
+Following text describes above process in more detail,
 
-Merging
-
-PR
+1. Branching
+Whenever a new feature is to be developed or an enhancement has to be done the developer starts with creating a new branch from the remote master branch of the respository.
+2. Commit
+All the changes related to the feature are commited to the new branch locally and each working day at least one push is performed on remote copy of the feature branch.
+3. Merge
+When the functionality is ready the developer pulls the changes from remote master branch to local master branch and then merges the changes to the feature branch. This makes sure that all the changes made to the repository after developer first aquired local copy of the repostory are accomodated in the local working copy of the code.
+4. PR
+After making sure everything is working on the new feature branch and the code from master branch is merged correctly the developer opens a Pull Request (PR) to add the new functionality to the master branch.
+Once the PR is approved the code from feature branch is copied to the master branch with all the commits from the feature branch.
 
 **References**
 1. https://www.atlassian.com/git/tutorials/what-is-version-control
-2. https://www.perforce.com/blog/vcs/what-source-control
-3. https://lonewolfonline.net/source-control/
+2. https://confluence.atlassian.com/get-started-with-bitbucket/types-of-version-control-856845192.html
+3. https://www.perforce.com/blog/vcs/what-source-control
+4. https://lonewolfonline.net/source-control/
 
 # Q2	
 What are the most important aspects of quality software?
