@@ -32,6 +32,55 @@ Once the PR is approved the code from feature branch is copied to the master bra
 
 # Q2	
 What are the most important aspects of quality software?
+
+## A2
+
+There could be many aspects of a quality software from technical and non-technical perspectives however from end user's perspective following qualities would be at top of the list.
+
+- User Experience
+
+    The term "User experience (UX)" is used to define user's experience while using the software. For example how well organized the UI is, how well the the navigation is structured or even how quick the percieved speed of the application is. It collectively defines how good the user's experience is compared to using other similar applications.
+
+    Generally user-friendly softwares that are easy to use provides better user experience which helps in achieving higher adaption of the application, increased productivity for users of the application, and better results for the business of the organization. 
+
+- Reliability
+
+    Any software application is prone to failures which might be due to varied number of reasons. Reliability of application is defined as the number and amount significant failures the user experiences while using the application. The less the number and criticality of the failure the more reliable the application.
+
+    Reliability of the application plays most important part if the application is being used for implementing realtime or business critical processes. For example a Banking Transaction software.
+
+- Secure
+
+    In connected world of today application security is becoming much more critical as more and more computers are interconnected through internet. It is important that the software application handles the user's credentials and data securely to make sure that the data handled by the application can be used only by its intended users and the users who should have access to the information are not deined the access by the application.
+
+    In current competitive world information security plays a big part in success of the entities using the software application.
+
+- Portable
+
+    Portability of application from end user perspective is the different kind of environments the applicatio can run correctly. The environment can be varied number operating systems supported by the application or different kind of browsers in which the application can be run even the different kind of devices on which the application can run.
+
+    Portablity gives users flexibility to use the application in different situations for example on desktop while working in office or home, along with at least limited critical functionality on mobile device while on the move.
+
+    Portablity gives agility to the software when better and/or new hardware devices are created.
+
+- Efficient
+
+    The software applications must be efficient enough to be able to make optimum use of available resources to provide better user experience without interfering with functionality of other applications running in the same environment.
+
+    Efficiency results improving end user productivity as well as cost reduction.
+- Flexible
+
+    Flexibility is the measure of how easily changes can be introduced in the application to respond to changes of needs of the users. Flexible applications not only helps in reducing overall cost of the software development but also it helps in providing consistent user experience since the users can still use other features of the application in the same as they have always used.
+
+**References**
+1. https://www.softwaresuggest.com/blog/five-characteristics-make-excellent-software/
+2. https://courses.cs.vt.edu/csonline/SE/Lessons/Qualities/index.html
+3. http://www.idc-online.com/technical_references/pdfs/data_communications/Characteristics_of_good_software.pdf
+4. https://uxplanet.org/how-user-experience-shapes-custom-software-development-78490943b0fc
+5. https://www.quora.com/What-are-some-characteristics-of-good-software
+
+
+
 # Q3	
 Outline a standard high level structure for a MERN stack application and explain the components
 # Q4	
