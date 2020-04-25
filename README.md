@@ -34,8 +34,29 @@ Once the PR is approved the code from feature branch is copied to the master bra
 What are the most important aspects of quality software?
 # Q3	
 Outline a standard high level structure for a MERN stack application and explain the components
+
 # Q4	
+
 A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
+
+## A4
+For any project there are a diverse range of skills required. Similarly, in case of web application development different kind of technical and non-technical skills are required to successfully sail through the conception to production deployment phase. 
+
+Following is a list of essential skills that are required to implement a website for a small business.
+
+1. Requirement Analysis
+2. Project Management and Planning
+3. Wireframing
+4. Frontend Design
+5. Database Design
+6. Backend Design
+7. SEO
+8. Testing
+9. Deployment
+
+**References**
+1. https://onextrapixel.com/12-skills-you-need-to-develop-a-website/
+
 # Q5	
 With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
 # Q6	
