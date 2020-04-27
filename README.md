@@ -40,22 +40,44 @@ Outline a standard high level structure for a MERN stack application and explain
 A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
 ## A4
-For any project there are a diverse range of skills required. Similarly, in case of web application development different kind of technical and non-technical skills are required to successfully sail through the conception to production deployment phase. 
+For any project there are a diverse range of skills required. Similarly, in case of web application development different kind of technical and non-technical skills are essential to successfully sail through the conception to production deployment phase. 
 
 Following is a list of essential skills that are required to implement a website for a small business.
 
 1. Requirement Analysis
+
+    Most of the project whether big or small starts with Requirements Analysis in some form to understand what is required to be built.
+
+    Having the skills to analyse the requirements helps to figure out
+    - What are the requirements and the major usecases?
+    - How the new application will help the customer to solve a problem?
+    - Set the boundries terms what needs to be delivered?
+
 2. Project Management and Planning
-3. Wireframing
-4. Frontend Design
-5. Database Design
-6. Backend Design
-7. SEO
-8. Testing
-9. Deployment
+
+    Management and Planning are essential for any kind of project to make sure the project is delivered within optimal time frame and the issues are addressed timely.
+    Project management is required to make sure the resources are utilized optimally, the team sticks to the defined timelines, all the goals of the project are achieved.
+    It is one of major skill that helps to make sure the project is completed successfully. Project management skills requires knowledge of at least one of the project management framework such as Agile Project Management.
+
+3. UI Design and Wireframing
+
+    UI Design involves the process of creating intituitive and easy to follow user interfaces. UI designers uses wireframing to sketch and communicate various visual components that might be availalbe to the user to interact with the software application. It helps in communicating and deciding flow of the interaction and what componentes will be present on actual user interface when its ready. For customers it also helps in figuring out if the application can provide all the desired functionality without building the entire application.
+
+4. Programming
+
+    Programming skills are the collective technical skills required to implement UI design, Business Logic, persistence of data in a storage medium, deployment etc...
+    It involves knowledge of frontend technologies, programming languages, database management applications, server deployment and many other relevant technologies that is required to design and implement software applications.
+    
+5. Testing
+
+    Testing is process of verifying if the web application works correctly for all the use cases that are defined during the requirement gathering. Investigative testing skills important to deliver a good quality website and to make sure that all the required standards of performance are maintained. 
 
 **References**
 1. https://onextrapixel.com/12-skills-you-need-to-develop-a-website/
+2. https://en.wikipedia.org/wiki/Requirements_analysis
+3. https://www.wrike.com/project-management-guide/faq/what-are-project-management-skills/
+4. https://balsamiq.com/learn/courses/intro-to-ui-design/what-is-ui-design/
+5. https://www.guru99.com/web-application-testing.html
 
 # Q5	
 With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
