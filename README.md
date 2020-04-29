@@ -44,6 +44,10 @@ In past few years JavaScript has matured to the level that it can not only be us
 
 The acryonym MERN refers to four components that could be used to build fullstack web applications.
 
+Following modified version of the original diagram from the blog ["The Modern Application Stack - Part 1: Introducing The MEAN Stack"](https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack) illustrates the location of each component in a fullstack app.
+
+![Mern Stack Components](./docs/images/mern-components.svg)
+
 1. **MongoDB**
 
     One of the first component of the MERN stack in the acrynym is the MongoDB. As the name suggests it is a database management system. Though MongoDB not built using JavaScript but its query language and the form of datastorage is JavaScript based.
@@ -52,13 +56,36 @@ The acryonym MERN refers to four components that could be used to build fullstac
 
     The data from MongoDB can be queried using JavaScript, that is interpreted by MongoDB using Shell using JavaScript Run time and then the data is returned as a JSON object which eliminates the need to peform translate the data into object at web application level.
 
-2. **Express**
-3. **React.js**
 4. **Node.js**
 
-what is a stack
-Single Page App
-Explain all four components
+    Node.js is server side JavaScript runtime which uses Google Chrome's V8 engine to parse and execute the javascript code at server side. It also bundles modules to interact with server resources such as file system, networks etc...
+
+    Until advent of Node.js JavaScript code could only be executed by the Browser at the frontend of the application by refering the javascript code in the HTML. However with Node.js the JavaScript can not only be used for frontend but also for backend of the application. Due to efficiency of the Google's V8 engine the JavaScript code executes much faster using Node.js compared to other traditional server side languages. It is also more easier for application developers to master one language and deliver fullstack functionality.
+
+    Node.js functionality can be extended by building custom modules, that is one of the most popular feature of Node.js besides other popular features.
+
+2. **Express**
+
+    Express is Node.js webserver framework module that enables Node.js to respond to http requests. It can be used to serve HTML documents, rest apis, as well as other types of media using http protocol. Like any webserver it handles routing, request url, header & body parsing and it can also be used to send http responses, set response codes & cookies, custom headers etc... 
+    
+    Express can also be extended using Node.js modules called middleware. Middleware can be used to perform many of the common tasks performed by web servers such as request body parsing, logging, authentication etc...
+
+    With combination of Node.js, Express and MongoDB one can easily create apis that can respond to request to retrieve and manipulate data in MongoDB over http that is commonly known as backend of the application.
+
+3. **React**
+
+    React is a javascript library maintained by Facebook which can be used to create **Single Page Applications (SPAs)**. One of the notorious characteristics of a SPA is that the page transitions are performed asynchronously without reloading of the entire page. This helps in building applications with superior user experience as the page transitions are faster compared to the web applications that user server side rendering. React uses concept of Virtual DOM which is React equivalent of DOM of an HTML page. React uses optimized alogrithms to update UI aka HTML DOM using Virtual DOM. 
+    
+    The developers create frontend of the application using React library which contains logic to render the initial UI for application, logic to fetch data from backend based on user interaction with application, and the logic to update UI using the data returned by the api.
+    
+
+
+**References**
+1. https://www.apress.com/gp/blog/all-blog-posts/why-mern/12056000
+2. https://www.geeksforgeeks.org/mern-stack/
+3. https://medium.com/nybles/switching-to-the-modern-day-mern-stack-574bb478fc64
+4. https://www.iamtimsmith.com/blog/what-is-the-mern-stack-and-how-does-it-work/
+5. https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack
 
 # Q4	
 A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
