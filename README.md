@@ -33,7 +33,33 @@ Once the PR is approved the code from feature branch is copied to the master bra
 # Q2	
 What are the most important aspects of quality software?
 # Q3	
+
 Outline a standard high level structure for a MERN stack application and explain the components
+
+## A3
+
+In context of software applications the term stack describes the technologies that are used to build the application functionality. For example **LAMP** stack which refers group of technologies Linux, Apache, MySQL and PHP that can be used to build web applications.
+
+In past few years JavaScript has matured to the level that it can not only be used to develop frontend but backend as well, collectively called fullstack applications. However the web applications built using javascript still needs to use a group of technologies that perform distinct functions. MERN stack is one of such javascript based technology stack which can be used for building fullstack web applications.
+
+The acryonym MERN refers to four components that could be used to build fullstack web applications.
+
+1. **MongoDB**
+
+    One of the first component of the MERN stack in the acrynym is the MongoDB. As the name suggests it is a database management system. Though MongoDB not built using JavaScript but its query language and the form of datastorage is JavaScript based.
+
+    MongoDB is a no-sql database which means its not a relational database and hence it does not store the data in form of tables of rows and columns. Instead the data is stored as a document that is nothing but a BSON object. BSON objects are similar to JSON objects of javascript but the distinction is that they are Binary objects unlike JSON. 
+
+    The data from MongoDB can be queried using JavaScript, that is interpreted by MongoDB using Shell using JavaScript Run time and then the data is returned as a JSON object which eliminates the need to peform translate the data into object at web application level.
+
+2. **Express**
+3. **React.js**
+4. **Node.js**
+
+what is a stack
+Single Page App
+Explain all four components
+
 # Q4	
 A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 # Q5	
