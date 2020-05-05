@@ -181,9 +181,45 @@ Following is a list of essential skills that are required to implement a website
 5. https://www.guru99.com/web-application-testing.html
 
 # Q5	
-With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
+
+With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges.
+
+## A5
+
+Recently I have worked on a Two Sided Marketplace app using Ruby on Rails. The app was a two sided marketplace for Photographers to borrow and lend photography gears in exchange for some money.
+
+I needed following skills to build my app,
+
+- **Search skills**
+
+    I feel my ability to Search Internet using right keywords helped me a lot to 
+    - Figure out different ideas for the app, 
+    - Find what kind of functionationlity generally an app the of kinds requires
+    - Understand how to implement certain features using Rails
+    - Fix various errors
+- **Project Management**
+    
+    The app was required to be built within fairly short timeline and it was very important to be on track since the project was required to be completed individually. It was very critical to have project and time management skills to breakdown the project into list of tasks, estimate time required to finish each task, track the progress and adjust the milestones based on the progress.
+
+- **UI Design and Wireframing**
+
+    The wireframes for the app was built using Balsamiq Mockups 3. Knowledge of building mockups using Balsamiq helped a lot to figureout various screens that were required to be built to implement various use cases as well how the placements of various components on large and small screens.
+
+    I had build the UI using Twitter Bootstrap 4. Knowledge of laying out various components on large and small screen using Bootstrap to achieve responsive web design worked really well.
+
+- **Programming, Testing and Deployment**
+
+    As mentioned earlier the app was built using Ruby on Rails. Knowledge of various Ruby concepts and how it is used by Rails to implement an MVC style app was a big booster to quickly architecht the app, build the backend on PostgreSQL, query the database using inbuilt ORM capabilities provided by Rails and implement the UI by componentising various UI elements.
+
+    Fair knowledge of Testing and Deployment techniques was also required to ultimately test the app to make sure all the use cases were implemented correctly and to make the app live on internet by deploying it on a hosting platform.
+
 # Q6	
-With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
+With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature.
+
+## A6
+
+
+
 # Q7	
 Explain control flow, using an example from the JavaScript programming language
 # Q8	
