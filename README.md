@@ -218,7 +218,17 @@ With reference to one of your own projects, evaluate how effective your knowledg
 
 ## A6
 
+As per my experience to successfully deliver any project weather small or big requires a lot of skills as well as persistence. When I look back at effectiveness of my skills for two sided market place application, I think following worked effectively
 
+1. Technical know how Rails, Ruby, Database, web development skills etc...
+2. Knowledge of Wireframing and principles of responsive design.
+3. Effective use of internet to design and fix issues.
+
+I think I still need to improve my self on following
+
+1. More effectively plan the MVP for the application.
+2. More effectively plan and manage the tasks from start to its completion.
+3. It is also important to effectively scope each functionality to make sure the application can be implemented within defined timelines.
 
 # Q7	
 Explain control flow, using an example from the JavaScript programming language
