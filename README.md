@@ -384,3 +384,67 @@ for (model of models) {
   console.log(mycar.show())
 }
 ```
+
+## A13
+
+```
+// declares a class Car
+class Car {
+  // defines constructor with an argument brand. 
+  // The constuctor executes each time a new instace of car is executed.
+  constructor(brand) {
+    // creates a property carname in scope of instance of Car class 
+    // and assigns value of brand to carname property
+    this.carname = brand;
+  }
+  // defines a method present which can be called on the instance of the Car class
+  present() {
+    // returns a string 'I have a ' concatenated with value of carname for the instance of car class
+    return 'I have a ' + this.carname;
+  }
+}
+
+// Declares class Model which inherits all the properties and methods of car class
+class Model extends Car {
+  // defines constructor, with two parameters brand and mod, for the Model class
+  constructor(brand, mod) {
+    // passes value of brand parameter to the constructor of Car class
+    super(brand);
+    // assigns value of mod parameter to the model property of the instance of the Model class
+    this.model = mod;
+  }
+  // defines a method show which can be executed on any instance of Model class
+  show() {
+    // returs value of present method which was defined in the Car class
+    // concatenated with ', it was made in ' and value of model property for the instance of the Model class
+    return this.present() + ', it was made in ' + this.model;
+  }
+}
+
+// create an array of string value and assign it to the makes variable
+let makes = ["Ford", "Holden", "Toyota"]
+
+// create an Array with 40 elements whose values are in the range 1980 to 2019
+// and assign the array to models variable
+let models = Array.from(new Array(40), (x,i) => i + 1980)
+
+// Declare a function randomIntFromInterval which accepts two parameters min and max
+function randomIntFromInterval(min,max) { // min and max included
+    // generate and return a random number in the range between min and max numbers
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+// iterate through each element in models array and and assign it to the model variable in parent scope
+// if the model variable does not exist then create it in the global scope
+for (model of models) {
+  // create a make variable in global scope and assign it a random element from makes array
+  make = makes[randomIntFromInterval(0,makes.length-1)]
+  // create a model variable in global scope and assign it a random element from models array
+  model = models[randomIntFromInterval(0,makes.length-1)]
+  // create a new instance of Model class pass it the value of make and model variables 
+  // and then assign the new instance to mycar variable in global scope
+  mycar = new Model(make, model);
+  // log the value returned by show method on the instance of mycar variable to the console
+  console.log(mycar.show())
+}
+```
