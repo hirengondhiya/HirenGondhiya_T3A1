@@ -231,7 +231,109 @@ I think I still need to improve my self on following
 3. It is also important to effectively scope each functionality to make sure the application can be implemented within defined timelines.
 
 # Q7	
+
 Explain control flow, using an example from the JavaScript programming language
+
+## A7
+
+In a computer application normally all the statements execute sequentially from top to bottom. The Control flow statements are the instructions or statements that alter sequence or in other words control flow of execution of instructions based on specified conditions. If we consider an example of an application that presents user's personal dashboard. Given that the application has access to a service to authenticate current user and a service to show the autheticated user's personal dashboard. In such a situation control statements can be used to show user's dashboard if the current user is signed in or else show login screen. 
+
+As evident from above example control statements help the computer or more precisely the CPU to make decision to which path of code to execute based on outcome of a true or false condition commonly known as logical or boolean expression.
+
+Control flow statements provide two kind of functionality decision making and repeating certain statements when certain criteria is true. Below text explains more about both:
+
+1. Conditional
+
+    Conditional statements are mainly used for decision making based on outcome of testing of the condition. There are various kind of conditional statements supported by JavaScript as mentioned below:
+
+    - if 
+
+        If statements are used for executing blocks of statements if given condition evaluates to true.
+
+        For example: To check if the user is logged in then show the dashboard following JavaScript statement can be used.
+        
+        `
+         if(userLoggedIn) {
+             showDashboard(userName);
+         }   
+        `
+    - else
+
+        Else statement is used in conjuction with if statement. It can be used to execute the statements when condition in if statement fails.
+
+        For example: To show login screen when user is not logged in following JavaScript statements can be used.
+
+        `
+            if(userLoggedIn) {
+                showDashboard(userName);
+            } else {
+                showLoginScreen();
+            }
+        `
+    - else if
+
+        Else If statement can also be used in conjuction with if statement to evaluate another condition when condition in previous if statement returns falsy value.
+
+        For example: While perfming comparison of two number the outcome would be 
+        - the first number is smaller than the second number
+        - the first number is larger than the second number
+        - both the numbers are equal
+
+        Above conditions can be checked using JavaScript as follows:
+
+        `
+        if(num1 < numb2){
+            return "smaller";
+        } else if(num1 > numb2) {
+            return "larger";
+        } else {
+            return "equal";
+        }
+        `
+    - Switch
+        If, Else, Else If statements work very well when ther are limited outcomes while evaluating the expression. However if there are multiple possible outcomes of evaluation of the expression then Switch statement is much more convinient to use
+
+        For example: for calling a specific function based on the route chosen by the user follwing Switch statement can be useful
+
+        `
+        switch (route) {
+            case 'route1':
+                function1();
+                break;
+            
+            case 'route2':
+                function2();
+                break;
+
+            case 'route3'
+                function3();
+                break;
+
+            default: 
+                defaultRoute();
+        }
+        `
+
+        
+2. Loop
+
+    The loop statements are mainly useful for performing certain repititive tasks. For example traverse through each element of an array list.
+
+    There are various loop statements supprted by JavaScript as listed below
+    - for
+    - for of
+    - for in
+    - while
+
+**References**
+1. https://developer.mozilla.org/en-US/docs/Glossary/Control_flow
+2. https://exploringjs.com/impatient-js/ch_control-flow.html
+3. https://medium.com/javascript-in-plain-english/introduction-to-javascript-control-flow-6272f92b75fa
+4. https://dev.to/mugas/control-flow-in-javascript-246l
+5. https://www.oreilly.com/library/view/learning-javascript-3rd/9781491914892/ch04.html
+6. https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow
+7. https://www.techotopia.com/index.php/JavaScript_Flow_Control_and_Looping
+
 # Q8	
 Explain type coercion, using examples from the JavaScript programming language
 # Q9	
