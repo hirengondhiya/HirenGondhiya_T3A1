@@ -336,6 +336,44 @@ Control flow statements provide two kind of functionality decision making and re
 
 # Q8	
 Explain type coercion, using examples from the JavaScript programming language
+
+## A8
+
+Type coercion is a feature of a lot of programming languages which offer implicit automatic type conversion when an operation is done between operands of different kind of types.
+
+For example:
+In JavaScript 1 + '5' results in a string '15' This is because while performing addition operation using + operator JavaScript attempts to convert the operand to string if one of the operand is string too.
+
+This type of conversion is permitted and even required because JavaScript does not force string type rules. So in order to continue execution of the application even when two different kindo of types involved in an opearation JavaScript first attempts to perform automatic type conversion. If it fails then only the JavaScript engine throws an error.
+
+Though it's a useful feature if not understood correctly it may also result in some unintended and complicated bugs in any JavaScript application.
+
+for example:
+
+While comparing two variables say a = '1' and b = 'abc' result below operation would be a boolean vaue 'true'
+
+`
+a < b === true
+`
+
+However if untentionally the datatype of say variable 'a' is changed to number 1 the above code would evaluate to a false value. This kind of mistakes can result in bugs wich are complex and not so easy to spot.
+
+If used correctly Type coersion can be used by the programmers to their example. For example to convert any string value to a number one case use - opeartor as shorthand instead of using any other methods
+
+`
+    let x = '42' - 0 would result in conversion the string '42' to a number value 42.
+`
+
+**References**
+1. https://hackernoon.com/understanding-js-coercion-ff5684475bfc
+2. https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
+3. https://dorey.github.io/JavaScript-Equality-Table/
+4. https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion
+5. https://2ality.com/2019/10/type-coercion.html
+6. https://stackoverflow.com/questions/19915688/what-exactly-is-type-coercion-in-javascript
+7.https://exploringjs.com/deep-js/ch_type-coercion.html
+8. https://medium.com/codezillas/let-me-coerce-you-into-liking-javascripts-dynamic-typing-system-3cd22c19cb64
+
 # Q9	
 Explain data types, using examples from the JavaScript programming language
 # Q10	
