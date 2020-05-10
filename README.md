@@ -480,8 +480,19 @@ Below table lists some of the most common operations and the methods provided by
 | search    | find,filter, indexOf, lastIndexOf, findIndexOf, includes |
 | Sorting   | sort                                                     |
 
+**References**
+1. https://www.elated.com/manipulating-javascript-arrays/
+2. https://www.w3schools.com/js/js_array_methods.asp
+3. https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/
+4. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+5. https://www.sitepoint.com/quick-tip-create-manipulate-arrays-in-javascript/
+6. https://dev.to/thomasaudo/advanced-array-manipulation-in-javascript--fhi
+7. https://www.w3schools.com/js/js_arrays.asp
+
 # Q11	
 Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
+
+
 # Q12	
 Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
 # Q13	
