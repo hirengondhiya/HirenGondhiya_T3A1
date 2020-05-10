@@ -492,6 +492,83 @@ Below table lists some of the most common operations and the methods provided by
 # Q11	
 Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 
+## A11
+
+An Object in JavaScript is a collection of key-value pairs. There are two types of keys called Properties and Methods. Properties hold value of any kind of data types in permitted in JavaScript where as methods are used to hold only functions which can access all the properties within context of the object.
+
+For example below code creates an object called person which has name property and a greet method which returns a greeting using value of name property.
+
+```
+let person = {
+  name: 'Alex',
+  greet() {
+    return `Hello ${this.name}`;
+  }
+}
+
+console.log(person.greet()); // prints 'Hello Alex'
+```
+
+As illustrated in above example the methods of an object can be accessed using dot operator and the methods can be invoked in the same fashion as normal functions.
+Values of properties stored in object could also be retrieved using dot operator.
+
+For example in person object described above the value of name property can be retrieved as follows
+
+`
+console.log(person.name) // prints 'Alex'
+`
+
+The dot operator can also be used to update values of properties of an object. 
+For example to update value of name property following code can be used.
+
+`
+person.name = 'Kanye' // overwrites value of 'Alex' in name property to 'Kanye'
+`
+
+There are many useful functions on Object class that can be used to manipulate objects in JavaScript.
+
+1. Object.keys(): 
+
+Object.keys() method can be used to retrieve an array of all the keys of pased object.
+
+For example below code returns an array of keys of person object
+
+`
+console.log(Object.keys(person)) // prints [ 'name', 'greet' ]
+`
+
+2. Object.values():
+
+Similar to Object.keys() method Object.values() method is used to retrieve an array of the values associated with all of the keys in passed object.
+
+For example: 
+Below code prints values associated with all the keys in person objct
+
+`
+console.log(Object.values(person)) // prints [ 'Kanye', [Function: greet] ]
+`
+
+3. Object.assign():
+
+Object.assign combines keys and values of two or more objects and assigns it to the target object.
+
+For example:
+Below code can be used to create a new object from person object.
+```
+let personCopy = Object.assign({}, person);
+console.log(personCopy == person); // prints false because Object.assign copies the keys and values to first empty object and then returns the new object
+console.log(personCopy) // prints { name: 'Kanye', greet: [Function: greet] }
+```
+
+**References**
+1. https://www.geeksforgeeks.org/objects-in-javascript/
+2. https://www.w3schools.com/js/js_objects.asp
+3. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+4. https://medium.com/infancyit/javascript-object-manipulation-5d1145cf06ef
+5. https://medium.com/@TK_CodeBear/manipulating-objects-in-javascript-59fefeb6a738
+6. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+7. https://codeburst.io/useful-javascript-array-and-object-methods-6c7971d93230
+
 
 # Q12	
 Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
