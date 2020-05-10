@@ -252,24 +252,24 @@ Control flow statements provide two kind of functionality decision making and re
 
         For example: To check if the user is logged in then show the dashboard following JavaScript statement can be used.
         
-        `
+        ```
          if(userLoggedIn) {
              showDashboard(userName);
          }   
-        `
+        ```
     - else
 
         Else statement is used in conjuction with if statement. It can be used to execute the statements when condition in if statement fails.
 
         For example: To show login screen when user is not logged in following JavaScript statements can be used.
 
-        `
+        ```
             if(userLoggedIn) {
                 showDashboard(userName);
             } else {
                 showLoginScreen();
             }
-        `
+        ```
     - else if
 
         Else If statement can also be used in conjuction with if statement to evaluate another condition when condition in previous if statement returns falsy value.
@@ -281,7 +281,7 @@ Control flow statements provide two kind of functionality decision making and re
 
         Above conditions can be checked using JavaScript as follows:
 
-        `
+        ```
         if(num1 < numb2){
             return "smaller";
         } else if(num1 > numb2) {
@@ -289,13 +289,13 @@ Control flow statements provide two kind of functionality decision making and re
         } else {
             return "equal";
         }
-        `
+        ```
     - Switch
         If, Else, Else If statements work very well when ther are limited outcomes while evaluating the expression. However if there are multiple possible outcomes of evaluation of the expression then Switch statement is much more convinient to use
 
         For example: for calling a specific function based on the route chosen by the user follwing Switch statement can be useful
 
-        `
+        ```
         switch (route) {
             case 'route1':
                 function1();
@@ -312,7 +312,7 @@ Control flow statements provide two kind of functionality decision making and re
             default: 
                 defaultRoute();
         }
-        `
+        ```
 
         
 2. Loop
@@ -352,17 +352,17 @@ for example:
 
 While comparing two variables say a = '1' and b = 'abc' result below operation would be a boolean vaue 'true'
 
-`
+```
 a < b === true
-`
+```
 
 However if untentionally the datatype of say variable 'a' is changed to number 1 the above code would evaluate to a false value. This kind of mistakes can result in bugs wich are complex and not so easy to spot.
 
 If used correctly Type coersion can be used by the programmers to their example. For example to convert any string value to a number one case use - opeartor as shorthand instead of using any other methods
 
-`
-    let x = '42' - 0 would result in conversion the string '42' to a number value 42.
-`
+```
+    let x = '42' - 0 //would result in conversion of the string '42' to a number value 42.
+```
 
 **References**
 1. https://hackernoon.com/understanding-js-coercion-ff5684475bfc
@@ -375,7 +375,47 @@ If used correctly Type coersion can be used by the programmers to their example.
 8. https://medium.com/codezillas/let-me-coerce-you-into-liking-javascripts-dynamic-typing-system-3cd22c19cb64
 
 # Q9	
+
 Explain data types, using examples from the JavaScript programming language
+
+## A9
+
+Every programming language supports concept of data type to classify the type of values that is stored in variables. There are various kinds of datatypes supported by different kind of programming languages based on it's application. A programming language may support primitive data type which are basic data types such as string, numbers, booleans etc... The other types are composite types which are combination of primitive data types that are based on some kind of data structure.
+
+JavaScript mainly supports string, boolean and number primitive data type. It also supports Array & Object which are the composite types and it also supports few special types null & undefined.
+
+A **Number** data type is used for storing number values which can be a positive or a negative number with or without decimal point value.
+
+A **String** data type is sequence of alphanumeric characters enclosed within single or double quotes.
+
+A **Boolean** data type is used to indicate one of two binary value using keyword true (to indicate postive or yes) and false (to indicate a negative or no).
+
+An **Array** data type is a linear collection or list of values of allowed data types in JavaScript.
+
+An **Object** data type is a collection of key-value pairs. The key can be used to retrieve the value within the object.
+
+**null** and **undefined** is used to indicate absence or emptyness of the value in a variable.
+
+Below code are examples of assigning different kind of data types to variables.
+
+```
+let num = -1.23 // creates a num variable and assigns value of number type
+let s = "Hello world" // creates a variable called s and assigns a string value to it
+let b = true // creates a variable b and assigs it a boolean value true
+let a = [1, "two", [true, false], {name: "hiren"}]
+let o = {lang: "JavaScript"}
+let nothing = null;
+let empty = undefined;
+```
+Datatypes are mainly useful for defining what kind of operations can be performed on values stored in the variables. For example addition operation using + symbol on number values would result in numeric addition however the same addition operation on two string values would result in concatenation operation.
+
+**References**
+1. https://techterms.com/definition/datatype
+2. https://en.wikipedia.org/wiki/Data_type
+3. https://searchapparchitecture.techtarget.com/definition/data-type
+4. https://hackr.io/blog/c-data-types
+5. https://www.tutorialrepublic.com/javascript-tutorial/javascript-data-types.php
+
 # Q10	
 Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 # Q11	
