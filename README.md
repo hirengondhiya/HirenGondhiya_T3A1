@@ -417,7 +417,69 @@ Datatypes are mainly useful for defining what kind of operations can be performe
 5. https://www.tutorialrepublic.com/javascript-tutorial/javascript-data-types.php
 
 # Q10	
+
 Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
+
+## A10
+
+An array is a datastructure that allows storage of list or sequence values in a variable. 
+
+In JavaScript an array can be declared as follows,
+
+`
+let array = [1, 2, 3]; // [1, 2, 3]
+`
+
+The elements of array can be accessed using 0 based index value.
+For example: The value 2 from above array can be retrieved as follows,
+
+`
+let value = array[1] // value = 2
+`
+
+To update any value in the array we can use the index.
+For example: To replace the last value 3 in above array we can write following code,
+
+`
+array[2] = "three"; // [1, 2, "three"]
+`
+
+In JavaScript the arrays can also expand or shrink at runtime. For example to add and element at the end of list we can use Push method as follows
+
+`
+array.push(4); // will expand the array and will add 4 at end to make array look like [1, 2, "three", 4]
+`
+
+To retrieve and remove the last element from array we can use following code
+
+`
+let lastItem = array.pop(); // array = [1, 2, "three"], lastItem = 4
+`
+
+Similarly we can also use unshift and shift methods  respectively to add and remove an element to and from start of an array.
+
+To traverse through all elements of an array we use following loops,
+- for
+- for of
+- forEach
+
+For example, below code uses for of loop to retrieve each element sequentially from the above array and print the value to the console.
+
+```
+for(let item of array) {
+    console.log(item);
+}
+```
+
+JavaScript provides many other built-in methods on array objects to perform various kinds of operation.
+Below table lists some of the most common operations and the methods provided by JavaScript.
+
+| Operation | Method                                                   |
+|-----------|----------------------------------------------------------|
+| Transform | map                                                      |
+| search    | find,filter, indexOf, lastIndexOf, findIndexOf, includes |
+| Sorting   | sort                                                     |
+
 # Q11	
 Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 # Q12	
