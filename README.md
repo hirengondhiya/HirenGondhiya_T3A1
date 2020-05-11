@@ -571,7 +571,73 @@ console.log(personCopy) // prints { name: 'Kanye', greet: [Function: greet] }
 
 
 # Q12	
-Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
+
+Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language.
+
+## A12
+
+JSON is acronym for JavaScript Object Notation. It is a text based format which can be easily serialized and deserialized.
+
+It is similar to JavaScript object literals however unlike object literals the keys needs to be enclosed within double quotes. 
+The JSON object supports values of following datatypes only and it does not support methods.
+
+1. string: should be enclosed within double quotes only
+2. numbers: should be number values without quotes
+3. objects: nested JSON object only
+4. arrays: array cotaining values supported by JSON 
+5. boolean: true or false value without quotes
+6. null: null without quotes
+
+Follow example shows depicts a JSON object,
+```
+let person = {
+    "name": "Kanye West",
+    "age": 42,
+    "home-town": {
+        "city": "Chicago",
+        "state": "Illinois",
+        "country": "US"
+    },
+    "childeren": ["North", "Saint", "Chicago", "Psalm"],
+    "married": true,
+    "personal-debt": null
+}
+```
+".json" extension is used to indicate the file contains an JSON object. JSON is very much popular not only as data storage format but also for storing configuration values, as an intermediate data formate while transfering data between systems.
+
+Similar to object literal, the values of a JSON object can be retrieved using dot notation.
+
+For example, retrieve name and update following JavaScript code can be used
+```
+let prevName = person.name;
+person.name = "Ye"
+```
+
+To convert the JSON into JavaScript provides stringify method on JSON object.
+For example to print the person object as a string on console following code can be used
+
+```
+let personString = JSON.stringify(person)
+console.log(personString) // prints '{"name":"Kanye West","age":42,"home-town":{"city":"Chicago","state":"Illinois","country":"US"},"childeren":["North","Saint","Chicago","Psalm"],"married":true,"personal-debt":null}'
+```
+
+To parse a string version of JSON into JSON object JavaScript provide parse method on JSON object.
+For example: following JavaScript code can be used to convert personSting into JSON object as follows
+
+```
+let personCopy = JSON.parse(personString);
+```
+
+One of the common use of JSON.stringify() and JSON.parse() is to create deep copy of an object. This makes sure that changes to nested JSON object or array in copy does not mutate the original object.
+
+
+**References**
+1. https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
+2. https://www.w3schools.com/js/js_json.asp
+3. https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript
+4. https://www.tutorialrepublic.com/javascript-tutorial/javascript-json-parsing.php
+5. https://medium.com/@timothyrobards/understanding-json-in-javascript-5098876d0915
+
 # Q13	
 For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes 
 
