@@ -10,25 +10,33 @@ To manage all of the above challanges a souce control or version control mechani
 
 There two main approaches for source control **Centralized** and **Distributed**. As the name suggests in the Centralized approach there is only one working copy of the source code and the version control is performed on that copy, whenever changes are required to be made on files, developers need to aquire exclusive rights to update the code in a file by checking out and then commit the changes using check-in. However this approach leads to inefficiencies and many other issues, since only one developer can make changes to a file at a time.
 
-In a Distributed source control system such as Git developers aquire copy of the codebase (source of truth) locally and then make and commit changes to the local copy. When the developer is satisfied with the newly created or updated functionality the changes are synced back to the main shared codebase (new source of truth).
+In a Distributed source control system such as Git developers aquire copy of the codebase (source of truth) locally and then make and commit changes to the local copy. When the developer is satisfied with the newly created or updated functionality the changes are synced back to the main shared codebase (new source of truth). Git being fully flexible SCM tool it doesn't enforce a specific way to collaborate however a process or an agreement called git workflow is required to make sure the codebase remains in good shape over longer period of development life cycle. One of such git workflow that is mainly employed by opensource projects is described below.
 
-Following text describes above process in more detail,
+1. **Main repo (upstream):**
+The source of truth or main repo is hosted on a remote. Final production code is derived from this repository.
 
-1. Branching
-Whenever a new feature is to be developed or an enhancement has to be done the developer starts with creating a new branch from the remote master branch of the respository.
-2. Commit
-All the changes related to the feature are commited to the new branch locally and each working day at least one push is performed on remote copy of the feature branch.
-3. Merge
-When the functionality is ready the developer pulls the changes from remote master branch to local master branch and then merges the changes to the feature branch. This makes sure that all the changes made to the repository after developer first aquired local copy of the repostory are accomodated in the local working copy of the code.
-4. PR
-After making sure everything is working on the new feature branch and the code from master branch is merged correctly the developer opens a Pull Request (PR) to add the new functionality to the master branch.
-Once the PR is approved the code from feature branch is copied to the master branch with all the commits from the feature branch.
+2. **Fork:**
+Whenever a developer would like to contribute to a project, s/he forks the main repository into their own remote repository. Then this forked repository is cloned by the devloper to his/her local development environment.
+
+3. **Add remote to upstream:**
+The forked repository by default have origin remote which points to the developer's forked repository. The developer also needs to add remote URL to the main repository which is by convention called upstream.
+
+4. **Topic Branch:**
+While working on fixing a specific issue or to add a new feature the developer creates a new branch on the cloned repository. This branch is categorized as a topic branch because it specifically created to work on specific topic. The topic branch can be named appropriate to it's purpose. The developer regularly commits the code to the topic branch and pushes to the origin repo.
+
+5. **Merge upstream**
+When the developer is ready to push his/her changes back to the Main repository s/he needs to first merge the code with current state of main branch and resolve the conflicts. Now when the topic branch is stable the code can be pushed to the origin.
+
+6. **Pull Request**
+Once the topic branch on forked repository is ready with the latest code from the upstream main. The developer opens a pull request to merge his/her contribution to the main branch of the remote repository. Once the pull request is reviewed and approved by the owner of the main repository the changes from the developer are pushed to the main branch of the main repository.
 
 **References**
 1. https://www.atlassian.com/git/tutorials/what-is-version-control
 2. https://confluence.atlassian.com/get-started-with-bitbucket/types-of-version-control-856845192.html
 3. https://www.perforce.com/blog/vcs/what-source-control
 4. https://lonewolfonline.net/source-control/
+5. https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
+6. https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
 
 # Q2	
 What are the most important aspects of quality software?
