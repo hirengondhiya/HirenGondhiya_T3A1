@@ -1,53 +1,53 @@
-# Q1	
+# Q1
 
 Provide an overview and description of a standard source control process for a large project.
 
 ## A1
 
-For any software development project the source code is one of the most important asset that entire project team nurture over time. As the code base grows it becomes very critical to track what changes were made for which functionality and how new changes will affect current codebase. In a large project where a number of developers are working on a single codebase it also gets challanging and critical to track single source of working and tested codebase. 
+For any software development project, the source code is one of the most important assets that the entire project team nurture over time. As the code base grows it becomes very critical to track what changes were made for which functionality and how new changes will affect current codebase. In a large project where many developers are working on a single codebase, it gets very challenging and critical to track the changes and maintain the working source code. 
 
-To manage all of the above challanges a souce control or version control mechanism is required that can make sure the code integrity is maintained all the time. The software application that aids in effective source control mechanism is called **Source Code Management (SCM) Application**.
+To manage all of the above challenges a source control or version control mechanism is required that can make sure the code integrity is maintained all the time. The software application that aids in an effective source control mechanism is called **Source Code Management (SCM) Application**.
 
-There two main approaches for source control **Centralized** and **Distributed**. As the name suggests in the Centralized approach there is only one working copy of the source code and the version control is performed on that copy, whenever changes are required to be made on files, developers need to aquire exclusive rights to update the code in a file by checking out and then commit the changes using check-in. However this approach leads to inefficiencies and many other issues, since only one developer can make changes to a file at a time.
+There two main approaches for source control **Centralized** and **Distributed**. As the name suggests in the Centralized approach there is only one working copy of the source code and the version control is performed on that copy, whenever changes are required to be made on files, developers need to acquire exclusive rights to update the code in a file by checking out and then commit the changes using check-in. However this approach leads to inefficiencies and many other issues, since only one developer can make changes to a file at a time.
 
-In a Distributed source control system such as Git developers aquire copy of the codebase (source of truth) locally and then make and commit changes to the local copy. When the developer is satisfied with the newly created or updated functionality the changes are synced back to the main shared codebase (new source of truth). Git being fully flexible SCM tool it doesn't enforce a specific way to collaborate however a process or an agreement called git workflow is required to make sure the codebase remains in good shape over longer period of development life cycle. One of such git workflow that is mainly employed by opensource projects is described below.
+In a distributed source control system such as Git, developers acquire a copy of the codebase (source of truth) locally and then make and commit changes to the local copy. When the developer is satisfied with the newly created or updated functionality the changes are synced back to the main shared codebase (a new source of truth). Git being a fully flexible SCM tool, it doesn't enforce a specific way to collaborate however a process or an agreement called git workflow is required to make sure the codebase remains in good shape over a longer period of development life cycle. One of such git workflow that is mainly employed by opensource projects is described below.
 
 1. **Main repo (upstream):**
-The source of truth or main repo is hosted on a remote. Final production code is derived from this repository.
+The source of truth or main repo is hosted on a remote. The final production code is derived from this repository.
 
 2. **Fork:**
-Whenever a developer would like to contribute to a project, s/he forks the main repository into their own remote repository. Then this forked repository is cloned by the devloper to his/her local development environment.
+Whenever a developer would like to contribute to a project, s/he forks the main repository into their remote repository. Then this forked repository is cloned by the developer to his/her local development environment.
 
 3. **Add remote to upstream:**
-The forked repository by default have origin remote which points to the developer's forked repository. The developer also needs to add remote URL to the main repository which is by convention called upstream.
+The forked repository by default has origin remote which points to the developer's forked repository. The developer also needs to add a remote URL to the main repository which is by convention called upstream.
 
 4. **Topic Branch:**
-While working on fixing a specific issue or to add a new feature the developer creates a new branch on the cloned repository. This branch is categorized as a topic branch because it specifically created to work on specific topic. The topic branch can be named appropriate to it's purpose. The developer regularly commits the code to the topic branch and pushes to the origin repo.
+While working on fixing a specific issue or to add a new feature the developer creates a new branch on the cloned repository. This branch is categorized as a topic branch because it specifically created to work on a specific topic. The topic branch can be named appropriate to its purpose. The developer regularly commits the code to the topic branch and pushes to the origin repo.
 
 5. **Merge upstream**
-When the developer is ready to push his/her changes back to the Main repository s/he needs to first merge the code with current state of main branch and resolve the conflicts. Now when the topic branch is stable the code can be pushed to the origin.
+When the developer is ready to push his/her changes back to the Main repository s/he needs to first merge the code with the current state of the main branch and resolve the conflicts. Now when the topic branch is stable the code can be pushed to the origin.
 
 6. **Pull Request**
-Once the topic branch on forked repository is ready with the latest code from the upstream main. The developer opens a pull request to merge his/her contribution to the main branch of the remote repository. Once the pull request is reviewed and approved by the owner of the main repository the changes from the developer are pushed to the main branch of the main repository.
+Once the topic branch on the forked repository is ready with the latest code from the upstream main. The developer opens a pull request to merge his/her contribution to the main branch of the remote repository. Once the pull request is reviewed and approved by the owner of the main repository the changes from the developer are pushed to the main branch of the main repository.
 
 **References**
-1. https://www.atlassian.com/git/tutorials/what-is-version-control
-2. https://confluence.atlassian.com/get-started-with-bitbucket/types-of-version-control-856845192.html
-3. https://www.perforce.com/blog/vcs/what-source-control
-4. https://lonewolfonline.net/source-control/
-5. https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
-6. https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
+1. [https://www.atlassian.com/git/tutorials/what-is-version-control](https://www.atlassian.com/git/tutorials/what-is-version-control)
+2. [https://confluence.atlassian.com/get-started-with-bitbucket/types-of-version-control-856845192.html](https://confluence.atlassian.com/get-started-with-bitbucket/types-of-version-control-856845192.html)
+3. [https://www.perforce.com/blog/vcs/what-source-control](https://www.perforce.com/blog/vcs/what-source-control)
+4. [https://lonewolfonline.net/source-control/](https://lonewolfonline.net/source-control/)
+5. [https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
+6. [https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 
-# Q2	
+# Q2   
 What are the most important aspects of quality software?
 
 ## A2
 
-There could be many aspects of a quality software from technical and non-technical perspectives however from end user's perspective following qualities would be at top of the list.
+There could be many aspects of quality software from technical and non-technical perspectives however from the end user's perspective following qualities would be at top of the list.
 
 - User Experience
 
-    The term "User experience (UX)" is used to define user's experience while using the software. For example how well organized the UI is, how well the the navigation is structured or even how quick the percieved speed of the application is. It collectively defines how good the user's experience is compared to using other similar applications.
+    The term "User experience (UX)" is used to define the user's experience while using the software. For example how well organized the UI is, how well the navigation is structured or even how quick the percieved speed of the application is. It collectively defines how good the user's experience is compared to using other similar applications.
 
     Generally user-friendly softwares that are easy to use provides better user experience which helps in achieving higher adaption of the application, increased productivity for users of the application, and better results for the business of the organization. 
 
@@ -81,15 +81,15 @@ There could be many aspects of a quality software from technical and non-technic
     Flexibility is the measure of how easily changes can be introduced in the application to respond to changes of needs of the users. Flexible applications not only helps in reducing overall cost of the software development but also it helps in providing consistent user experience since the users can still use other features of the application in the same as they have always used.
 
 **References**
-1. https://www.softwaresuggest.com/blog/five-characteristics-make-excellent-software/
-2. https://courses.cs.vt.edu/csonline/SE/Lessons/Qualities/index.html
-3. http://www.idc-online.com/technical_references/pdfs/data_communications/Characteristics_of_good_software.pdf
-4. https://uxplanet.org/how-user-experience-shapes-custom-software-development-78490943b0fc
-5. https://www.quora.com/What-are-some-characteristics-of-good-software
+1. [https://www.softwaresuggest.com/blog/five-characteristics-make-excellent-software/](https://www.softwaresuggest.com/blog/five-characteristics-make-excellent-software/)
+2. [https://courses.cs.vt.edu/csonline/SE/Lessons/Qualities/index.html](https://courses.cs.vt.edu/csonline/SE/Lessons/Qualities/index.html)
+3. [http://www.idc-online.com/technical_references/pdfs/data_communications/Characteristics_of_good_software.pdf](http://www.idc-online.com/technical_references/pdfs/data_communications/Characteristics_of_good_software.pdf)
+4. [https://uxplanet.org/how-user-experience-shapes-custom-software-development-78490943b0fc](https://uxplanet.org/how-user-experience-shapes-custom-software-development-78490943b0fc)
+5. [https://www.quora.com/What-are-some-characteristics-of-good-software](https://www.quora.com/What-are-some-characteristics-of-good-software)
 
 
 
-# Q3	
+# Q3   
 
 Outline a standard high level structure for a MERN stack application and explain the components
 
@@ -131,20 +131,20 @@ Following modified version of the original diagram from the blog ["The Modern Ap
 
 3. **React**
 
-    React is a javascript library maintained by Facebook which can be used to create **Single Page Applications (SPAs)**. One of the notorious characteristics of a SPA is that the page transitions are performed asynchronously without reloading of the entire page. This helps in building applications with superior user experience as the page transitions are faster compared to the web applications that user server side rendering. React uses concept of Virtual DOM which is React equivalent of DOM of an HTML page. React uses optimized alogrithms to update UI aka HTML DOM using Virtual DOM. 
+    React is an open source javascript library built and maintained by Facebook. It can be used to create **Single Page Applications (SPAs)**. One of the notorious characteristics of a SPA is that the page transitions are performed asynchronously without reloading of the entire page. This helps in building applications with superior user experience as the page transitions are faster compared to the web applications that does server side rendering. React takes advantage of a concept called "Virtual DOM" which is React equivalent of DOM of an HTML page. React uses optimized alogrithms to update UI aka HTML DOM using Virtual DOM. 
     
     The developers create frontend of the application using React library which contains logic to render the initial UI for application, logic to fetch data from backend based on user interaction with application, and the logic to update UI using the data returned by the api.
     
 
 
 **References**
-1. https://www.apress.com/gp/blog/all-blog-posts/why-mern/12056000
-2. https://www.geeksforgeeks.org/mern-stack/
-3. https://medium.com/nybles/switching-to-the-modern-day-mern-stack-574bb478fc64
-4. https://www.iamtimsmith.com/blog/what-is-the-mern-stack-and-how-does-it-work/
-5. https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack
+1. [https://www.apress.com/gp/blog/all-blog-posts/why-mern/12056000](https://www.apress.com/gp/blog/all-blog-posts/why-mern/12056000)
+2. [https://www.geeksforgeeks.org/mern-stack/](https://www.geeksforgeeks.org/mern-stack/)
+3. [https://medium.com/nybles/switching-to-the-modern-day-mern-stack-574bb478fc64](https://medium.com/nybles/switching-to-the-modern-day-mern-stack-574bb478fc64)
+4. [https://www.iamtimsmith.com/blog/what-is-the-mern-stack-and-how-does-it-work/](https://www.iamtimsmith.com/blog/what-is-the-mern-stack-and-how-does-it-work/)
+5. [https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack](https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack)
 
-# Q4	
+# Q4   
 
 A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
@@ -182,13 +182,13 @@ Following is a list of essential skills that are required to implement a website
     Testing is process of verifying if the web application works correctly for all the use cases that are defined during the requirement gathering. Investigative testing skills important to deliver a good quality website and to make sure that all the required standards of performance are maintained. 
 
 **References**
-1. https://onextrapixel.com/12-skills-you-need-to-develop-a-website/
-2. https://en.wikipedia.org/wiki/Requirements_analysis
-3. https://www.wrike.com/project-management-guide/faq/what-are-project-management-skills/
-4. https://balsamiq.com/learn/courses/intro-to-ui-design/what-is-ui-design/
-5. https://www.guru99.com/web-application-testing.html
+1. [https://onextrapixel.com/12-skills-you-need-to-develop-a-website/](https://onextrapixel.com/12-skills-you-need-to-develop-a-website/)
+2. [https://en.wikipedia.org/wiki/Requirements_analysis](https://en.wikipedia.org/wiki/Requirements_analysis)
+3. [https://www.wrike.com/project-management-guide/faq/what-are-project-management-skills/](https://www.wrike.com/project-management-guide/faq/what-are-project-management-skills/)
+4. [https://balsamiq.com/learn/courses/intro-to-ui-design/what-is-ui-design/](https://balsamiq.com/learn/courses/intro-to-ui-design/what-is-ui-design/)
+5. [https://www.guru99.com/web-application-testing.html](https://www.guru99.com/web-application-testing.html)
 
-# Q5	
+# Q5
 
 With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges.
 
@@ -221,7 +221,7 @@ I needed following skills to build my app,
 
     Fair knowledge of Testing and Deployment techniques was also required to ultimately test the app to make sure all the use cases were implemented correctly and to make the app live on internet by deploying it on a hosting platform.
 
-# Q6	
+# Q6   
 With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature.
 
 ## A6
@@ -238,7 +238,7 @@ I think I still need to improve my self on following
 2. More effectively plan and manage the tasks from start to its completion.
 3. It is also important to effectively scope each functionality to make sure the application can be implemented within defined timelines.
 
-# Q7	
+# Q7
 
 Explain control flow, using an example from the JavaScript programming language
 
@@ -283,8 +283,8 @@ Control flow statements provide two kind of functionality decision making and re
         Else If statement can also be used in conjuction with if statement to evaluate another condition when condition in previous if statement returns falsy value.
 
         For example: While perfming comparison of two number the outcome would be 
-        - the first number is smaller than the second number
-        - the first number is larger than the second number
+        - the first number is smaller than the second number or
+        - the first number is larger than the second number or
         - both the numbers are equal
 
         Above conditions can be checked using JavaScript as follows:
@@ -334,15 +334,15 @@ Control flow statements provide two kind of functionality decision making and re
     - while
 
 **References**
-1. https://developer.mozilla.org/en-US/docs/Glossary/Control_flow
-2. https://exploringjs.com/impatient-js/ch_control-flow.html
-3. https://medium.com/javascript-in-plain-english/introduction-to-javascript-control-flow-6272f92b75fa
-4. https://dev.to/mugas/control-flow-in-javascript-246l
-5. https://www.oreilly.com/library/view/learning-javascript-3rd/9781491914892/ch04.html
-6. https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow
-7. https://www.techotopia.com/index.php/JavaScript_Flow_Control_and_Looping
+1. [https://developer.mozilla.org/en-US/docs/Glossary/Control_flow](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
+2. [https://exploringjs.com/impatient-js/ch_control-flow.html](https://exploringjs.com/impatient-js/ch_control-flow.html)
+3. [https://medium.com/javascript-in-plain-english/introduction-to-javascript-control-flow-6272f92b75fa](https://medium.com/javascript-in-plain-english/introduction-to-javascript-control-flow-6272f92b75fa)
+4. [https://dev.to/mugas/control-flow-in-javascript-246l](https://dev.to/mugas/control-flow-in-javascript-246l)
+5. [https://www.oreilly.com/library/view/learning-javascript-3rd/9781491914892/ch04.html](https://www.oreilly.com/library/view/learning-javascript-3rd/9781491914892/ch04.html)
+6. [https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow)
+7. [https://www.techotopia.com/index.php/JavaScript_Flow_Control_and_Looping](https://www.techotopia.com/index.php/JavaScript_Flow_Control_and_Looping)
 
-# Q8	
+# Q8
 Explain type coercion, using examples from the JavaScript programming language
 
 ## A8
@@ -373,16 +373,16 @@ If used correctly Type coersion can be used by the programmers to their example.
 ```
 
 **References**
-1. https://hackernoon.com/understanding-js-coercion-ff5684475bfc
-2. https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
-3. https://dorey.github.io/JavaScript-Equality-Table/
-4. https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion
-5. https://2ality.com/2019/10/type-coercion.html
-6. https://stackoverflow.com/questions/19915688/what-exactly-is-type-coercion-in-javascript
-7.https://exploringjs.com/deep-js/ch_type-coercion.html
-8. https://medium.com/codezillas/let-me-coerce-you-into-liking-javascripts-dynamic-typing-system-3cd22c19cb64
+1. [https://hackernoon.com/understanding-js-coercion-ff5684475bfc](https://hackernoon.com/understanding-js-coercion-ff5684475bfc)
+2. [https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
+3. [https://dorey.github.io/JavaScript-Equality-Table/](https://dorey.github.io/JavaScript-Equality-Table/)
+4. [https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion)
+5. [https://2ality.com/2019/10/type-coercion.html](https://2ality.com/2019/10/type-coercion.html)
+6. [https://stackoverflow.com/questions/19915688/what-exactly-is-type-coercion-in-javascript](https://stackoverflow.com/questions/19915688/what-exactly-is-type-coercion-in-javascript)
+7. [https://exploringjs.com/deep-js/ch_type-coercion.html](https://exploringjs.com/deep-js/ch_type-coercion.html)
+8. [https://medium.com/codezillas/let-me-coerce-you-into-liking-javascripts-dynamic-typing-system-3cd22c19cb64](https://medium.com/codezillas/let-me-coerce-you-into-liking-javascripts-dynamic-typing-system-3cd22c19cb64)
 
-# Q9	
+# Q9
 
 Explain data types, using examples from the JavaScript programming language
 
@@ -400,7 +400,7 @@ A **Boolean** data type is used to indicate one of two binary value using keywor
 
 An **Array** data type is a linear collection or list of values of allowed data types in JavaScript.
 
-An **Object** data type is a collection of key-value pairs. The key can be used to retrieve the value within the object.
+An **Object** data type is a collection of key-value pairs like Hashes in Ruby programming language. The key can be used to retrieve the value within the object. Unlike ruby keys are always of type string in JavaScript Objects.
 
 **null** and **undefined** is used to indicate absence or emptyness of the value in a variable.
 
@@ -418,13 +418,13 @@ let empty = undefined;
 Datatypes are mainly useful for defining what kind of operations can be performed on values stored in the variables. For example addition operation using + symbol on number values would result in numeric addition however the same addition operation on two string values would result in concatenation operation.
 
 **References**
-1. https://techterms.com/definition/datatype
-2. https://en.wikipedia.org/wiki/Data_type
-3. https://searchapparchitecture.techtarget.com/definition/data-type
-4. https://hackr.io/blog/c-data-types
-5. https://www.tutorialrepublic.com/javascript-tutorial/javascript-data-types.php
+1. [https://techterms.com/definition/datatype](https://techterms.com/definition/datatype)
+2. [https://en.wikipedia.org/wiki/Data_type](https://en.wikipedia.org/wiki/Data_type)
+3. [https://searchapparchitecture.techtarget.com/definition/data-type](https://searchapparchitecture.techtarget.com/definition/data-type)
+4. [https://hackr.io/blog/c-data-types](https://hackr.io/blog/c-data-types)
+5. [https://www.tutorialrepublic.com/javascript-tutorial/javascript-data-types.php](https://www.tutorialrepublic.com/javascript-tutorial/javascript-data-types.php)
 
-# Q10	
+# Q10
 
 Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 
@@ -489,15 +489,15 @@ Below table lists some of the most common operations and the methods provided by
 | Sorting   | sort                                                     |
 
 **References**
-1. https://www.elated.com/manipulating-javascript-arrays/
-2. https://www.w3schools.com/js/js_array_methods.asp
-3. https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/
-4. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-5. https://www.sitepoint.com/quick-tip-create-manipulate-arrays-in-javascript/
-6. https://dev.to/thomasaudo/advanced-array-manipulation-in-javascript--fhi
-7. https://www.w3schools.com/js/js_arrays.asp
+1. [https://www.elated.com/manipulating-javascript-arrays/](https://www.elated.com/manipulating-javascript-arrays/)
+2. [https://www.w3schools.com/js/js_array_methods.asp](https://www.w3schools.com/js/js_array_methods.asp)
+3. [https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/](https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/)
+4. [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+5. [https://www.sitepoint.com/quick-tip-create-manipulate-arrays-in-javascript/](https://www.sitepoint.com/quick-tip-create-manipulate-arrays-in-javascript/)
+6. [https://dev.to/thomasaudo/advanced-array-manipulation-in-javascript--fhi](https://dev.to/thomasaudo/advanced-array-manipulation-in-javascript--fhi)
+7. [https://www.w3schools.com/js/js_arrays.asp](https://www.w3schools.com/js/js_arrays.asp)
 
-# Q11	
+# Q11
 Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 ## A11
@@ -569,16 +569,16 @@ console.log(personCopy) // prints { name: 'Kanye', greet: [Function: greet] }
 ```
 
 **References**
-1. https://www.geeksforgeeks.org/objects-in-javascript/
-2. https://www.w3schools.com/js/js_objects.asp
-3. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
-4. https://medium.com/infancyit/javascript-object-manipulation-5d1145cf06ef
-5. https://medium.com/@TK_CodeBear/manipulating-objects-in-javascript-59fefeb6a738
-6. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
-7. https://codeburst.io/useful-javascript-array-and-object-methods-6c7971d93230
+1. [https://www.geeksforgeeks.org/objects-in-javascript/](https://www.geeksforgeeks.org/objects-in-javascript/)
+2. [https://www.w3schools.com/js/js_objects.asp](https://www.w3schools.com/js/js_objects.asp)
+3. [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+4. [https://medium.com/infancyit/javascript-object-manipulation-5d1145cf06ef](https://medium.com/infancyit/javascript-object-manipulation-5d1145cf06ef)
+5. [https://medium.com/@TK_CodeBear/manipulating-objects-in-javascript-59fefeb6a738](https://medium.com/@TK_CodeBear/manipulating-objects-in-javascript-59fefeb6a738)
+6. [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+7. [https://codeburst.io/useful-javascript-array-and-object-methods-6c7971d93230](https://codeburst.io/useful-javascript-array-and-object-methods-6c7971d93230)
 
 
-# Q12	
+# Q12
 
 Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language.
 
@@ -640,13 +640,13 @@ One of the common use of JSON.stringify() and JSON.parse() is to create deep cop
 
 
 **References**
-1. https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
-2. https://www.w3schools.com/js/js_json.asp
-3. https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript
-4. https://www.tutorialrepublic.com/javascript-tutorial/javascript-json-parsing.php
-5. https://medium.com/@timothyrobards/understanding-json-in-javascript-5098876d0915
+1. [https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+2. [https://www.w3schools.com/js/js_json.asp](https://www.w3schools.com/js/js_json.asp)
+3. [https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript](https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript)
+4. [https://www.tutorialrepublic.com/javascript-tutorial/javascript-json-parsing.php](https://www.tutorialrepublic.com/javascript-tutorial/javascript-json-parsing.php)
+5. [https://medium.com/@timothyrobards/understanding-json-in-javascript-5098876d0915](https://medium.com/@timothyrobards/understanding-json-in-javascript-5098876d0915)
 
-# Q13	
+# Q13
 For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes 
 
 **Q13 Code Snippet**
